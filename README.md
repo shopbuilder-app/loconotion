@@ -1,5 +1,17 @@
 # Loconotion
 
+👉 Run the script `python3 loconotion example/example.toml --timeout 20`
+
+👉 Git to save this source - https://github.com/shopbuilder-app/loconotion
+
+👉 Git to run output docker - https://github.com/shopbuilder-app/website-template
+
+
+
+
+
+
+
 **Loconotion** is a Python script that parses a [Notion.so](https://notion.so) public page (alongside with all of its subpages) and generates a lightweight, customizable static site out of it.
 
 ## But Why?

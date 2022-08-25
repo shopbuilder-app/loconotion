@@ -99,3 +99,12 @@ for (let i = 0; i < imgs.length; i++) {
   style = style + "; height:auto!important;"
   parent.setAttribute("style",  style);
 }
+
+const colHeaders = document.querySelectorAll(".notion-column_list-block .notion-header-block");
+
+for (let i = 0; i < colHeaders.length; i++) {
+  el = colHeaders[i]
+  let style = el.getAttribute("style")
+  style = style.replace(/margin-top: .*;/, "")
+  el.setAttribute("style",  style);
+}

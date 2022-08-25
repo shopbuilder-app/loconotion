@@ -1,5 +1,6 @@
 import glob
 import hashlib
+from importlib import import_module
 import logging
 import mimetypes
 import os
@@ -10,6 +11,7 @@ import time
 import urllib.parse
 import uuid
 from pathlib import Path
+# from fileorganizer import organizeFile 
 
 log = logging.getLogger(f"loconotion.{__name__}")
 
@@ -732,6 +734,14 @@ class Parser:
             int(elapsed_time % 3600 // 60),
             int(elapsed_time % 60),
         )
+
+        # remove disc/index.html file
+        log.info(f"Remove index html file")
+        os.remove(str(self.dist_folder / "index.html"))
+
+
+        
+        # organizeFile(self.dist_folder)
         log.info(
             f"Finished!\n\nProcessed {len(self.processed_pages)} pages in {formatted_time}"
         )
