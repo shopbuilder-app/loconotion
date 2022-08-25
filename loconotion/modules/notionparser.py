@@ -736,8 +736,8 @@ class Parser:
         )
 
         # remove disc/index.html file
-        log.info(f"Remove index html file")
-        os.remove(str(self.dist_folder / "index.html"))
+        # log.info(f"Remove index html file")
+        # os.remove(str(self.dist_folder / "index.html"))
 
 
         
